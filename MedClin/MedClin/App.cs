@@ -1,3 +1,6 @@
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
 using Xamarin.Forms;
 
 namespace MedClin.Core
@@ -6,6 +9,7 @@ namespace MedClin.Core
     {
         public App()
         {
+            MobileCenter.Start(typeof(Analytics), typeof(Crashes));
             DependencyService.Register<ViewModels.Services.IMessageService, Views.Services.MessageService>();
             DependencyService.Register<ViewModels.Services.INavigationService, Views.Services.NavigationService>();
             

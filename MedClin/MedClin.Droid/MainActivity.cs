@@ -7,6 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using MedClin.Core;
+using Microsoft.Azure.Mobile;
 using Plugin.Permissions;
 
 namespace MedClin.Droid
@@ -19,6 +20,7 @@ namespace MedClin.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            MobileCenter.Configure("8a6dba55-cceb-4fcb-8a95-13b1461cd023");
             LoadApplication(new App());
         }
 
