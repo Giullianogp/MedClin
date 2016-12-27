@@ -6,7 +6,9 @@ namespace MedClin.Core
     {
         public App()
         {
-            // The root page of your application
+            DependencyService.Register<ViewModels.Services.IMessageService, Views.Services.MessageService>();
+            DependencyService.Register<ViewModels.Services.INavigationService, Views.Services.NavigationService>();
+            
             MainPage = new ContentPage
             {
                 Content = new StackLayout

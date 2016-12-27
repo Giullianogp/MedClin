@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:MedClin.Core.ViewModels;assembly=MedClin.Core"
+             x:Class="MedClin.Core.Views.MasterView" Title="MedClin">
+  
+  <ContentPage.BindingContext>
+    <viewModels:MasterViewModel/>
+  </ContentPage.BindingContext>
+
+
+  <StackLayout>
+    <ListView x:Name="ListMenu" VerticalOptions="FillAndExpand" BackgroundColor="Black" SeparatorVisibility="None" ItemsSource="{Binding Menu}">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout Orientation="Horizontal" Padding="10,0,0,0">
+              <Image HeightRequest="30" WidthRequest="30" Source="{Binding Image}" VerticalOptions="Center"/>
+              <Label Text="{Binding Option}" TextColor="White" VerticalOptions="Center"/>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+</ContentPage>
