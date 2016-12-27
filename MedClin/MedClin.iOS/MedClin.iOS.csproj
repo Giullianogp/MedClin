@@ -98,8 +98,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MedClin\MedClin.csproj">
-      <Name>MedClin</Name>
+    <ProjectReference Include="..\MedClin\MedClin.Core.csproj">
+      <Name>MedClin.Core</Name>
+      <Project>{1E0E49CD-EBAF-49A1-A94C-D62338C8F454}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -21,7 +21,7 @@ namespace MedClin.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new MedClin.App());
+            LoadApplication(new Core.App());
         }
     }
 }

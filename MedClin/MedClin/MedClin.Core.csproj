@@ -8,8 +8,8 @@
     <ProjectGuid>{1E0E49CD-EBAF-49A1-A94C-D62338C8F454}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MedClin</RootNamespace>
-    <AssemblyName>MedClin</AssemblyName>
+    <RootNamespace>MedClin.Core</RootNamespace>
+    <AssemblyName>MedClin.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
