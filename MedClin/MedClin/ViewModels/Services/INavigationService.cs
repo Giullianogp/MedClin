@@ -10,6 +10,6 @@ namespace MedClin.Core.ViewModels.Services
     {
         void NavigateToAgenda();
         void NavigateToConfig();
-        void NavigateToPaciente();
+        Task NavigateToPaciente();
     }
 }

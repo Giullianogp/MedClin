@@ -28,13 +28,9 @@ namespace MedClin.Core.Views.Services
             masterDetailPage.IsPresented = false;
         }
 
-        public void NavigateToPaciente()
+        public async Task NavigateToPaciente()
         {
-            var masterDetailPage = Application.Current.MainPage as MasterDetailPage;
-            if (masterDetailPage == null) return;
-
-            masterDetailPage.Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(PacienteView)));
-            masterDetailPage.IsPresented = false;
+            await (Application.Current.MainPage as MasterDetailPage).Detail.Navigation.PushAsync(new PacienteTabbedView(), true);
         }
 
         //async Task INavigationService.NavigateToDetalheAgenda(AgendaMobile agenda) =>

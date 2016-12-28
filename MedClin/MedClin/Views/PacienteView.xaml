@@ -8,6 +8,11 @@
   <ContentPage.BindingContext>
     <viewModels:PacienteViewModel/>
   </ContentPage.BindingContext>
+  
+  <StackLayout>
+    <Label Text="Paciente" TextColor="Black"></Label>
+    <Button Text="detalhe" Command="{Binding PacienteSelectCommand}"/>
+  </StackLayout>
 
 
 </ContentPage>

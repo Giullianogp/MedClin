@@ -48,9 +48,12 @@
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\MasterViewModel.cs" />
+    <Compile Include="ViewModels\PacienteDetalheViewModel.cs" />
+    <Compile Include="ViewModels\PacienteTabbedViewModel.cs" />
     <Compile Include="ViewModels\PacienteViewModel.cs" />
     <Compile Include="ViewModels\Services\IMessageService.cs" />
     <Compile Include="ViewModels\Services\INavigationService.cs" />
+    <Compile Include="ViewModels\ServicosViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\AgendaView.xaml.cs">
       <DependentUpon>AgendaView.xaml</DependentUpon>
@@ -73,11 +76,26 @@
     <Compile Include="Views\MasterView.xaml.cs">
       <DependentUpon>MasterView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\PacienteAgendaView.xaml.cs">
+      <DependentUpon>PacienteAgendaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PacienteDetalheView.xaml.cs">
+      <DependentUpon>PacienteDetalheView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PacienteRegistroView.xaml.cs">
+      <DependentUpon>PacienteRegistroView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PacienteTabbedView.xaml.cs">
+      <DependentUpon>PacienteTabbedView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\PacienteView.xaml.cs">
       <DependentUpon>PacienteView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Services\MessageService.cs" />
     <Compile Include="Views\Services\NavigationService.cs" />
+    <Compile Include="Views\ServicosView.xaml.cs">
+      <DependentUpon>ServicosView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.8.0.5, Culture=neutral, processorArchitecture=MSIL">
@@ -200,6 +218,36 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\DashBoardView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ServicosView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\PacienteTabbedView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\PacienteDetalheView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\PacienteAgendaView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\PacienteRegistroView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
