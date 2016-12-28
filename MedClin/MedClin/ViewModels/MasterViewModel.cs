@@ -23,7 +23,10 @@ namespace MedClin.Core.ViewModels
         {
             Menu = new ObservableCollection<Menu>
             {
-                new Menu {Option = "Agenda", Tipo = typeof(AgendaView), Image = ""}
+                new Menu {Option = "Agenda", Tipo = typeof(AgendaView), Image = "agenda.png"},
+                new Menu {Option = "Pacientes", Tipo = typeof(PacienteView), Image = "paciente.png"},
+                new Menu {Option = "Gerencial", Tipo = typeof(GerencialView), Image = "relatorio.png"}
+
             };
         }
 

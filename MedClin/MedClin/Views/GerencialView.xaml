@@ -1,13 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MedClin.Core.Views.PacienteView"
-             xmlns:viewModels="clr-namespace:MedClin.Core.ViewModels;assembly=MedClin.Core"
-             Title="Pacientes">
+             x:Class="MedClin.Core.Views.GerencialView" Title="Gerencial"
+             xmlns:viewModels="clr-namespace:MedClin.Core.ViewModels;assembly=MedClin.Core">
 
   <ContentPage.BindingContext>
-    <viewModels:PacienteViewModel/>
+    <viewModels:GerencialViewModel/>
   </ContentPage.BindingContext>
-
 
 </ContentPage>

@@ -2,21 +2,55 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:MedClin.Core.ViewModels;assembly=MedClin.Core"
-             x:Class="MedClin.Core.Views.MasterView" Title="MedClin">
-  
+             x:Class="MedClin.Core.Views.MasterView"
+             Title="MedClin"
+             Icon="hamburger.png">
+
   <ContentPage.BindingContext>
     <viewModels:MasterViewModel/>
   </ContentPage.BindingContext>
 
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0" Android="0"/>
+  </ContentPage.Padding>
 
-  <StackLayout>
-    <ListView x:Name="ListMenu" VerticalOptions="FillAndExpand" BackgroundColor="Black" SeparatorVisibility="None" ItemsSource="{Binding Menu}">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <OnPlatform x:Key="SizePlatform" x:TypeArguments="x:Double" iOS="190" Android="140"/>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  
+
+  <StackLayout VerticalOptions="FillAndExpand"  Padding="0" Spacing="0">
+
+    <AbsoluteLayout HeightRequest="{StaticResource SizePlatform}">
+
+      <StackLayout  Padding="0,5,0,0"
+                    AbsoluteLayout.LayoutBounds="0,0,1,1"
+                    AbsoluteLayout.LayoutFlags="All" >
+        <Image Source="mdoctor.png"
+             HeightRequest="100"
+             WidthRequest="100"
+             HorizontalOptions="Center"/>
+        <Label Text="user name"
+               FontSize="15"
+               TextColor="White"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"/>
+
+      </StackLayout>
+
+    </AbsoluteLayout>
+
+
+
+    <ListView x:Name="ListMenu" VerticalOptions="FillAndExpand" BackgroundColor="White" SeparatorVisibility="None" ItemsSource="{Binding Menu}">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
             <StackLayout Orientation="Horizontal" Padding="10,0,0,0">
               <Image HeightRequest="30" WidthRequest="30" Source="{Binding Image}" VerticalOptions="Center"/>
-              <Label Text="{Binding Option}" TextColor="White" VerticalOptions="Center"/>
+              <Label Text="{Binding Option}" TextColor="Black" VerticalOptions="Center"/>
             </StackLayout>
           </ViewCell>
         </DataTemplate>

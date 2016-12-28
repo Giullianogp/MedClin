@@ -15,7 +15,7 @@
   <MasterDetailPage.Detail>
     <NavigationPage>
       <x:Arguments>
-        <views:AgendaView />
+        <views:DashBoardView />
       </x:Arguments>
     </NavigationPage>
   </MasterDetailPage.Detail>
